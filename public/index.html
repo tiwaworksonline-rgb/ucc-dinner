@@ -1123,12 +1123,6 @@ body::before {
             <option value="benefactor">Benefactor — $10,000 / two seats</option>
           </select>
 
-          <label class="form-label" for="guests">Number of seats</label>
-          <select class="form-select" id="guests" style="width:100%;margin-bottom:0;">
-            <option value="1">1 seat — Patron ($5,000)</option>
-            <option value="2">2 seats — Benefactor ($10,000)</option>
-          </select>
-
           <label class="form-label" for="dietary">Dietary needs / accessibility</label>
           <input class="form-input form-full" id="dietary" type="text" placeholder="Vegetarian, gluten-free, wheelchair access, etc." style="width:100%;margin-bottom:0;" />
 
@@ -1417,7 +1411,6 @@ async function submitRSVP() {
   const email      = document.getElementById('email').value.trim();
   const org        = document.getElementById('org').value.trim();
   const tierVal    = document.getElementById('tier').value;
-  const guests     = document.getElementById('guests').value;
   const dietary    = document.getElementById('dietary').value.trim();
   const note       = document.getElementById('note').value.trim();
   const payment    = document.getElementById('payment').value;
@@ -1433,7 +1426,7 @@ async function submitRSVP() {
   }
 
   const tierLabel    = tierVal === 'patron' ? 'Patron — $5,000' : 'Benefactor — $10,000';
-  const seatsLabel   = guests === '2' ? '2 seats' : '1 seat';
+  const seatsLabel   = tierVal === 'benefactor' ? '2 seats' : '1 seat';
   const paymentLabel = payment === 'prepay' ? 'Prepay — instructions within 24 hrs' : 'Pay at Event — seat held on commitment';
 
   const btn = document.getElementById('rsvpSubmitBtn');
