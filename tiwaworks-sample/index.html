@@ -37,6 +37,57 @@ body{background:#fff;color:#111}
 .check{border-radius:6px}
 .footer{border-top:1px solid #1f242c}
 @media(max-width:850px){.heroGrid,.introGrid,.pressGrid{grid-template-columns:1fr}.projectGrid{grid-template-columns:1fr}}
+
+/* ULTRA-CLEAN EXECUTIVE PASS */
+:root{--ink:#0d0f12;--soft:#f8f8f7;--line:#e7e7e5;--muted:#686d75;--max:1120px}
+body{font-family:Arial,Helvetica,sans-serif;color:#111;letter-spacing:-.005em}
+.container{width:min(var(--max),calc(100% - 48px))}
+.navin{height:68px}.nav{border-bottom:1px solid var(--line)}
+.brand{letter-spacing:.04em;font-size:15px}.brand b{width:32px;height:32px;font-size:11px;margin-right:8px}
+.links{gap:24px;font-size:12px;font-weight:600}.nav .btn{padding:10px 14px;font-size:12px}
+.hero{padding:100px 0 86px}.heroGrid{grid-template-columns:1.5fr .5fr;gap:84px}
+h1{font-size:clamp(52px,6.4vw,78px);max-width:760px;margin-bottom:26px}
+h2{font-size:clamp(34px,3.8vw,48px);max-width:760px}
+h3{font-size:20px}.lead{font-size:18px;line-height:1.65;max-width:680px}
+.eyebrow{font-size:10px;letter-spacing:.18em;margin-bottom:14px;color:#7b5b23}
+.panel{padding:26px;background:#fbfbfa;border:1px solid var(--line)}
+.panel h3{font-size:18px}.row{grid-template-columns:90px 1fr;padding:11px 0}
+.actions{margin-top:28px}.btn{padding:12px 17px;font-size:13px;font-weight:700}
+.metrics{background:#fff;color:#111;border-bottom:1px solid var(--line)}
+.metricGrid{border-top:0}.metric{padding:24px 18px;border-right:1px solid var(--line)}
+.metric strong{font-size:24px;color:#111}.metric span{color:#777;font-size:10px}
+.strip,.partnerBar{display:none!important}
+.section{padding:96px 0}.section+.section{border-top:1px solid #f0f0ee}
+.soft{background:#fafaf9}.heading,.section-heading{max-width:720px;margin-bottom:42px}
+.heading p,.section-heading p{font-size:16px;line-height:1.7;color:var(--muted)}
+.grid4,.grid3{gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.card{border:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);padding:28px;background:#fff;border-radius:0}
+.card p{font-size:14px;line-height:1.65}.num{width:auto;height:auto;background:none;color:#8a6627;margin-bottom:18px;font-size:11px}
+.checkList{gap:0;border:1px solid var(--line);border-bottom:0}
+.check{border:0!important;border-bottom:1px solid var(--line)!important;background:#fff!important;border-radius:0!important;padding:20px}
+.check b{color:#111;font-size:14px}.check span{color:#777;font-size:12px}
+.projectGrid,.proofbar{display:none!important}
+.caseDetailGrid{grid-template-columns:1fr 1fr;gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line);margin-top:0}
+.caseDetail{border:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0;padding:32px}
+.caseDetail h3{font-size:24px}.caseMeta{grid-template-columns:repeat(3,1fr);gap:0;border:1px solid var(--line)}
+.caseMeta div{background:#fff;border:0;border-right:1px solid var(--line);border-radius:0;padding:11px}.caseMeta div:last-child{border-right:0}
+.caseDetail ul{font-size:14px;line-height:1.65}.caseDetail p{font-size:14px;color:#666;line-height:1.7}
+.process .card:before{margin-bottom:14px}
+.industries{display:grid;grid-template-columns:repeat(5,1fr);gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.industries span{border:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0;padding:16px;background:#fff;font-size:12px}
+.proc{gap:80px}.dark{background:#111}.naics{border-radius:0;padding:30px}.naics div{padding:11px 0}
+.introGrid{gap:80px}.statement{font-size:23px;line-height:1.45}.bulletBox{border-left:2px solid #111;padding-left:22px}
+#leadership{background:#fff}.leaderCopy{max-width:760px}.leaderTitle{font-size:11px}.quote{font-size:20px;border-left:2px solid #111;padding-left:18px}
+.pressGrid{grid-template-columns:1fr 1fr 1fr;gap:0;border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.pressFeature,.pressCard{background:#fff;color:#111;border:0;border-right:1px solid var(--line);border-bottom:1px solid var(--line);border-radius:0;padding:28px;min-height:0}
+.pressFeature p,.pressCard p{color:#666;font-size:14px}.pressFeature .pub,.pressCard .pub{color:#7b5b23}
+.pressFeature .arrow,.pressCard .arrow{font-size:12px}
+.news .grid3{display:none}
+.contact{background:#f8f8f7}.contactGrid{gap:80px}.form{padding:26px;border-radius:0;border:1px solid var(--line)}
+input,select,textarea{border:0;border-bottom:1px solid #d9d9d7;border-radius:0;padding:12px 2px;background:transparent}
+.footer{padding:34px 0;background:#111}
+@media(max-width:900px){.heroGrid,.introGrid,.proc,.contactGrid{grid-template-columns:1fr}.industries{grid-template-columns:repeat(2,1fr)}.caseDetailGrid{grid-template-columns:1fr}.pressGrid{grid-template-columns:1fr}.panel{max-width:520px}}
+@media(max-width:620px){.container{width:min(var(--max),calc(100% - 28px))}.metricGrid{grid-template-columns:1fr 1fr}.grid3,.grid4{grid-template-columns:1fr}.industries{grid-template-columns:1fr}.section{padding:72px 0}.hero{padding:72px 0}.heroGrid{gap:48px}h1{font-size:46px}.caseMeta{grid-template-columns:1fr}.caseMeta div{border-right:0;border-bottom:1px solid var(--line)}}
 </style></head><body>
 <header class="nav"><div class="container navin"><a href="#" class="brand"><b>TW</b>TIWAWORKS</a><nav class="links"><a href="#gov">Government</a><a href="#cap">Capabilities</a><a href="#past">Past Performance</a><a href="#leadership">Leadership</a><a href="#news">News</a><a href="#contact">Contact</a></nav><a class="btn outline" href="#proc">Capability Statement</a></div></header>
 <section class="hero"><div class="container heroGrid"><div><div class="eyebrow">Government Contracting • Integrated Services</div><h1>Strategy. Production. Engagement. <span>Execution.</span></h1><p class="lead">TiwaWorks helps government agencies, institutions and organizations turn complex initiatives into well-managed programs, high-impact events, effective communications and measurable community engagement.</p><div class="actions"><a class="btn gold" href="#gov">Explore Government Capabilities</a><a class="btn outline" href="#contact">Team With TiwaWorks</a></div></div><aside class="panel"><div class="eyebrow">Contracting Snapshot</div><h3>TIWAWORKS, INC.</h3><div class="row"><span>UEI</span><strong>HS98G27C5LM1</strong></div><div class="row"><span>CAGE</span><strong>8WF47</strong></div><div class="row"><span>Business</span><strong>Minority-Owned Small Business</strong></div><div class="row"><span>Primary NAICS</span><strong>541613</strong></div><div class="row"><span>Location</span><strong>Atlanta, Georgia</strong></div></aside></div></div></section>
