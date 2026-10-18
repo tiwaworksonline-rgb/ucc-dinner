@@ -126,6 +126,20 @@ textarea{resize:vertical}
 .collab-body p{font-size:15px;color:var(--muted);margin:0}
 .collab-card a{display:block}
 .collab-card:hover{transform:translateY(-2px);transition:.2s ease;box-shadow:0 10px 28px rgba(0,0,0,.06)}
+.why{background:#fff}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line);border-left:1px solid var(--line)}
+.why-item{padding:28px;border-right:1px solid var(--line);border-bottom:1px solid var(--line)}
+.why-item strong{display:block;font-size:30px;line-height:1;margin-bottom:12px;color:#9a7735}
+.why-item h3{font-size:19px;margin-bottom:10px}
+.why-item p{font-size:13px;color:var(--muted);margin:0}
+.qualify{margin-top:24px;border-top:1px solid #2e3034;padding-top:18px;color:#bfc3c8;font-size:12px}
+.qualify b{color:#fff}
+.intake-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.intake{background:#fff;border:1px solid #d8d8d4;padding:30px}
+.intake h3{font-size:24px}.intake p{font-size:14px;color:var(--muted)}
+.form-note{font-size:11px;color:#6f747a;margin-top:-4px}
+.bid-form{background:#fff;padding:34px;display:grid;gap:16px}
+.bid-form .row2{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 footer{background:#0b0c0e;color:#979ca4;padding:34px 0}
 footer strong{color:#fff}
 footer p{font-size:12px;margin:5px 0}
@@ -140,6 +154,8 @@ footer p{font-size:12px;margin:5px 0}
   .workforce-grid{grid-template-columns:1fr}
   .work-card{height:330px}
   .collab-grid{grid-template-columns:1fr}
+  .why-grid{grid-template-columns:1fr 1fr}
+  .intake-grid{grid-template-columns:1fr}
   .process-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:650px){
@@ -148,7 +164,8 @@ footer p{font-size:12px;margin:5px 0}
   h1{font-size:52px}
   .hero-copy{padding-top:22px}
   .hero-image{min-height:340px}
-  .snapshot-grid,.service-grid,.gov-grid,.process-grid,.case-list{grid-template-columns:1fr}
+  .snapshot-grid,.service-grid,.gov-grid,.process-grid,.case-list,.why-grid{grid-template-columns:1fr}
+  .bid-form .row2{grid-template-columns:1fr}
   .snap,.service,.gov-item,.process-step{border-right:0!important;padding-left:0!important;padding-right:0!important}
   .service{padding:26px}
   section{padding:72px 0}
@@ -163,6 +180,7 @@ footer p{font-size:12px;margin:5px 0}
     <nav class="links">
       <a href="#services">Services</a>
       <a href="#government">Government</a>
+      <a href="#why">Why TiwaWorks</a>
       <a href="#experience">Experience</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
@@ -265,6 +283,7 @@ footer p{font-size:12px;margin:5px 0}
     </div>
   </div>
   <div class="container representative">Representative stock imagery is used to illustrate the types of teams and work environments TiwaWorks can coordinate.</div>
+  <div class="container qualify"><b>Partner qualification focus:</b> Relevant experience · Insurance · Applicable licenses · Service coverage · Capacity · Pricing responsiveness. No partnership or contract award is implied by an inquiry.</div>
 </section>
 
 <section id="government">
@@ -285,6 +304,24 @@ footer p{font-size:12px;margin:5px 0}
   </div>
 </section>
 
+<section id="why" class="why">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Why TiwaWorks</div>
+      <h2>Experienced enough to manage complexity. Agile enough to move.</h2>
+      <p>TiwaWorks combines long-term operating experience, a broad delivery network and integrated capabilities that help agencies and prime contractors reduce coordination risk.</p>
+    </div>
+    <div class="why-grid">
+      <article class="why-item"><strong>20+ Years</strong><h3>Proven Execution</h3><p>Decades of experience managing events, programs, vendors, partners, audiences and high-visibility deliverables.</p></article>
+      <article class="why-item"><strong>1 Team</strong><h3>Integrated Delivery</h3><p>Strategy, program management, sourcing, communications, production and execution coordinated through one accountable lead.</p></article>
+      <article class="why-item"><strong>Network</strong><h3>Qualified Partner Reach</h3><p>Extensive relationships with service providers, manufacturers, printers, logistics partners, trade specialists and subject-matter experts.</p></article>
+      <article class="why-item"><strong>20K+</strong><h3>Large-Scale Experience</h3><p>Experience coordinating complex public-facing programs and experiences involving thousands of participants and multiple stakeholders.</p></article>
+      <article class="why-item"><strong>Multi-Market</strong><h3>Community & Cultural Reach</h3><p>Deep experience engaging multicultural audiences, HBCU communities and international markets.</p></article>
+      <article class="why-item"><strong>Flexible</strong><h3>Prime + Teaming Ready</h3><p>Available to serve as a prime contractor, subcontractor, project lead or strategic teaming partner depending on the opportunity.</p></article>
+    </div>
+  </div>
+</section>
+
 <section id="experience" class="soft">
   <div class="container">
     <div class="section-head">
@@ -297,25 +334,25 @@ footer p{font-size:12px;margin:5px 0}
         <article class="case">
           <small>Large-Scale Event</small>
           <h3>Atlanta Greek Picnic</h3>
-          <p>Multi-day production, audience development, vendors, sponsorship, talent, marketing and community engagement.</p>
+          <p><b>Role:</b> Lead producer and coordinator. <b>Scope:</b> Multi-day production, audience development, vendors, sponsorship, talent, marketing and community engagement. <b>Result:</b> Demonstrated execution at 20K+ attendee scale.</p>
           <div class="case-tags"><span>20K+ scale</span><span>Atlanta</span><span>Production</span></div>
         </article>
         <article class="case">
           <small>International</small>
           <h3>ABE Lagos</h3>
-          <p>Long-running international experiential platform demonstrating cross-cultural marketing, production and partnership development.</p>
+          <p><b>Role:</b> Strategy and production lead. <b>Scope:</b> Cross-cultural marketing, event production, partnerships and guest experience. <b>Result:</b> 20+ years of local and international large-scale event experience.</p>
           <div class="case-tags"><span>15 years</span><span>International</span><span>Experiential</span></div>
         </article>
         <article class="case">
           <small>Business Programming</small>
           <h3>Detroit Business Symposium</h3>
-          <p>Professional convening demonstrating sponsor development, programming, attendee management and production.</p>
+          <p><b>Role:</b> Program and production lead. <b>Scope:</b> Sponsorship, programming, attendee management, communications and production. <b>Result:</b> 350+ attendee professional convening.</p>
           <div class="case-tags"><span>350+ attendees</span><span>Sponsor-funded</span></div>
         </article>
         <article class="case">
           <small>Digital Solutions</small>
           <h3>Revueno & RoadHero</h3>
-          <p>Custom digital-platform work demonstrating product strategy, user-focused design and technology-enabled service delivery.</p>
+          <p><b>Role:</b> Product strategy and digital delivery. <b>Scope:</b> User-focused design, web technology and platform development. <b>Result:</b> Custom digital solutions applicable to government, education and program delivery.</p>
           <div class="case-tags"><span>Custom platforms</span><span>Web</span><span>Digital</span></div>
         </article>
       </div>
@@ -360,7 +397,7 @@ footer p{font-size:12px;margin:5px 0}
       <div class="eyebrow">Procurement Snapshot</div>
       <h2>Easy to evaluate. Ready to engage.</h2>
       <p>TiwaWorks keeps contracting identifiers, services and capability positioning aligned so procurement teams and prime contractors can quickly understand where the company fits.</p>
-      <a class="btn" style="color:#fff;border-color:#3a3d42;margin-top:16px" href="#contact">Request Capability Statement</a>
+      <a class="btn" style="color:#fff;border-color:#3a3d42;margin-top:16px" href="capability-statement.html" target="_blank">View / Download Capability Statement</a>
     </div>
     <div class="naics">
       <div><strong>541613</strong><span>Marketing Consulting Services</span></div>
@@ -406,7 +443,7 @@ footer p{font-size:12px;margin:5px 0}
         </a>
       </article>
       <article class="collab-card">
-        <a href="#contact">
+        <a href="#vendor-partner">
           <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Vendors and subcontractors collaborating in an office">
           <div class="collab-body">
             <h3>Vendors & Subcontractors</h3>
@@ -415,7 +452,7 @@ footer p{font-size:12px;margin:5px 0}
         </a>
       </article>
       <article class="collab-card">
-        <a href="#contact">
+        <a href="#careers">
           <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Professionals and specialists networking">
           <div class="collab-body">
             <h3>Professionals & Specialists</h3>
@@ -430,29 +467,93 @@ footer p{font-size:12px;margin:5px 0}
 <section id="contact" class="contact">
   <div class="container contact-grid">
     <div>
-      <div class="eyebrow">Work With TiwaWorks</div>
-      <h2>Bring us into your next opportunity.</h2>
-      <p>Agency opportunity, prime-contractor teaming, sourcing need, field support, event program or communications scope—we can start with the requirement and build the right delivery approach.</p>
+      <div class="eyebrow">Invite Us to Bid</div>
+      <h2>Send us the opportunity.</h2>
+      <p>Government agency, institution or prime contractor—share the solicitation details and TiwaWorks will evaluate fit, delivery approach and teaming needs.</p>
+      <p><b>Email:</b> tiwaworkscontracting@gmail.com</p>
+      <p><b>Address:</b> 6595G Roswell Road, Suite 233, Atlanta, GA 30341</p>
     </div>
-    <form action="https://formsubmit.co/tiwaworkscontracting@gmail.com" method="POST">
-      <input type="hidden" name="_subject" value="New TiwaWorks Website Inquiry">
+    <form class="bid-form" action="https://formsubmit.co/tiwaworkscontracting@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New TiwaWorks Bid Invitation">
       <input type="hidden" name="_template" value="table">
       <input type="text" name="_honey" style="display:none">
-      <input name="Name" placeholder="Name" required>
-      <input name="Organization" placeholder="Organization">
-      <input type="email" name="Email" placeholder="Email" required>
-      <input name="Phone" placeholder="Phone">
-      <select name="Inquiry Type" required>
-        <option value="">Select inquiry type</option>
-        <option>Government opportunity / RFP</option>
-        <option>Prime contractor teaming</option>
-        <option>Vendor / subcontractor partnership</option>
-        <option>Consulting / project support</option>
-        <option>Events / communications / digital</option>
+      <div class="row2"><input name="Agency or Company" placeholder="Agency / Company" required><input name="Contact Name" placeholder="Contact name" required></div>
+      <div class="row2"><input type="email" name="Email" placeholder="Email" required><input name="Phone" placeholder="Phone"></div>
+      <div class="row2"><input name="Solicitation Number" placeholder="Solicitation / RFP number"><input name="Opportunity Title" placeholder="Opportunity title" required></div>
+      <div class="row2"><input type="date" name="Due Date"><input name="Estimated Value" placeholder="Estimated value, if known"></div>
+      <input name="Solicitation Link" placeholder="Link to solicitation / bid documents">
+      <select name="Primary Scope" required>
+        <option value="">Primary scope</option>
+        <option>Consulting & Program Management</option>
+        <option>Event Management & Production</option>
+        <option>Sourcing, Procurement & Logistics</option>
+        <option>Marketing, Communications & Creative</option>
+        <option>Community & Stakeholder Engagement</option>
+        <option>Digital Solutions & Market Expansion</option>
+        <option>Other / Multi-scope</option>
       </select>
-      <textarea name="Project Details" rows="5" placeholder="Tell us about the scope, deadline and what you need." required></textarea>
-      <button class="btn btn-dark" type="submit">Start a Conversation</button>
+      <textarea name="Opportunity Details" rows="5" placeholder="Briefly describe the scope, requirements, teaming needs and any key deadlines." required></textarea>
+      <div class="form-note">For attachments, include a public solicitation link or note that documents are available by email.</div>
+      <button class="btn btn-dark" type="submit">Submit Bid Invitation</button>
     </form>
+  </div>
+</section>
+
+<section id="vendor-partner">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Vendor & Subcontractor Intake</div>
+      <h2>Qualified vendors. Coordinated delivery.</h2>
+      <p>TiwaWorks welcomes qualified suppliers, subcontractors and specialty service providers interested in supporting future opportunities.</p>
+    </div>
+    <div class="intake-grid">
+      <div class="intake">
+        <h3>What we review</h3>
+        <p>Relevant experience, service coverage, insurance, applicable licenses, capacity, pricing responsiveness and ability to meet project requirements.</p>
+        <p><b>Common categories:</b> trades, facilities support, printing, apparel, manufacturers, logistics, staffing, production, technology, creative services and other specialty services.</p>
+      </div>
+      <form class="intake" action="https://formsubmit.co/tiwaworkscontracting@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New TiwaWorks Vendor Partner Inquiry">
+        <input type="hidden" name="_template" value="table">
+        <input name="Company Name" placeholder="Company name" required>
+        <input name="Contact Name" placeholder="Contact name" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <input name="Phone" placeholder="Phone">
+        <input name="Services" placeholder="Primary services / products" required>
+        <input name="Coverage Area" placeholder="Service coverage area">
+        <input name="Certifications" placeholder="Certifications / designations, if applicable">
+        <textarea name="Qualifications" rows="5" placeholder="Relevant experience, capacity, licenses, insurance and other qualifications."></textarea>
+        <button class="btn btn-dark" type="submit">Submit Vendor Profile</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section id="careers" class="soft">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Professionals & Specialists</div>
+      <h2>Work with TiwaWorks.</h2>
+      <p>We welcome introductions from experienced professionals, project-based specialists and independent experts whose skills align with our client work.</p>
+    </div>
+    <div class="intake-grid">
+      <div class="intake">
+        <h3>Areas of interest</h3>
+        <p>Project management, events, logistics, sourcing, marketing, communications, public engagement, creative production, digital, administrative support and specialty professional services.</p>
+      </div>
+      <form class="intake" action="https://formsubmit.co/tiwaworkscontracting@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="New TiwaWorks Professional Interest">
+        <input type="hidden" name="_template" value="table">
+        <input name="Name" placeholder="Name" required>
+        <input type="email" name="Email" placeholder="Email" required>
+        <input name="Phone" placeholder="Phone">
+        <input name="Expertise" placeholder="Area of expertise" required>
+        <input name="Location" placeholder="Location / service area">
+        <input name="LinkedIn or Portfolio" placeholder="LinkedIn / portfolio link">
+        <textarea name="Experience" rows="5" placeholder="Tell us about your experience and the type of work you are interested in."></textarea>
+        <button class="btn btn-dark" type="submit">Submit Interest</button>
+      </form>
+    </div>
   </div>
 </section>
 </main>
