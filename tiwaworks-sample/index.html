@@ -374,18 +374,23 @@ footer p{font-size:12px;margin:5px 0}
       <h2>Bring us into your next opportunity.</h2>
       <p>Agency opportunity, prime-contractor teaming, sourcing need, field support, event program or communications scope—we can start with the requirement and build the right delivery approach.</p>
     </div>
-    <form onsubmit="event.preventDefault();alert('Sample form — ready to connect to Brevo.');">
-      <input placeholder="Name">
-      <input placeholder="Organization">
-      <input type="email" placeholder="Email">
-      <select>
+    <form action="https://formsubmit.co/tiwaworkscontracting@gmail.com" method="POST">
+      <input type="hidden" name="_subject" value="New TiwaWorks Website Inquiry">
+      <input type="hidden" name="_template" value="table">
+      <input type="text" name="_honey" style="display:none">
+      <input name="Name" placeholder="Name" required>
+      <input name="Organization" placeholder="Organization">
+      <input type="email" name="Email" placeholder="Email" required>
+      <input name="Phone" placeholder="Phone">
+      <select name="Inquiry Type" required>
+        <option value="">Select inquiry type</option>
         <option>Government opportunity / RFP</option>
         <option>Prime contractor teaming</option>
         <option>Vendor / subcontractor partnership</option>
         <option>Consulting / project support</option>
         <option>Events / communications / digital</option>
       </select>
-      <textarea rows="5" placeholder="Tell us about the scope, deadline and what you need."></textarea>
+      <textarea name="Project Details" rows="5" placeholder="Tell us about the scope, deadline and what you need." required></textarea>
       <button class="btn btn-dark" type="submit">Start a Conversation</button>
     </form>
   </div>
