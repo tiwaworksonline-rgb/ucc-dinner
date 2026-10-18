@@ -78,15 +78,22 @@ section{padding:96px 0}
 .gov-item:nth-child(odd){padding-right:38px;border-right:1px solid var(--line)}
 .gov-item:nth-child(even){padding-left:38px}
 .gov-item p{color:var(--muted);font-size:14px}
-.case-wrap{display:grid;grid-template-columns:.8fr 1.2fr;gap:64px}
-.case-list{border-top:1px solid var(--line)}
-.case{padding:22px 0;border-bottom:1px solid var(--line)}
+.case-wrap{display:grid;grid-template-columns:1.08fr .92fr;gap:34px;align-items:start}
+.case-list{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.case{background:#fff;border:1px solid #dedbd4;padding:26px;min-height:245px;display:flex;flex-direction:column;justify-content:flex-start}
 .case small{font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:#8f6d2f;font-weight:900}
-.case h3{font-size:24px;margin-top:8px}
-.case p{font-size:14px;color:var(--muted)}
-.case-feature{background:#0b0c0e;color:white;padding:42px;display:flex;flex-direction:column;justify-content:space-between;min-height:520px}
-.case-feature .big-stat{font-size:clamp(72px,9vw,120px);line-height:.85;letter-spacing:-.06em;color:#d3ad64;font-weight:900}
-.case-feature p{max-width:500px;color:#c1c5ca}
+.case h3{font-size:24px;margin:10px 0 12px}
+.case p{font-size:14px;color:var(--muted);margin-bottom:18px}
+.case-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:auto}
+.case-tags span{font-size:10px;background:#f1eee7;padding:6px 8px;color:#5f6268}
+.case-feature{background:linear-gradient(145deg,#111214,#1b1d20);color:white;padding:34px;min-height:508px;display:flex;flex-direction:column;justify-content:space-between;position:sticky;top:120px}
+.impact-title{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#d3ad64;font-weight:900;margin-bottom:18px}
+.impact-grid{display:grid;grid-template-columns:1fr 1fr;border-top:1px solid #35383d;border-left:1px solid #35383d}
+.impact-stat{padding:22px;border-right:1px solid #35383d;border-bottom:1px solid #35383d}
+.impact-stat strong{display:block;font-size:34px;line-height:1;color:#e0b866;margin-bottom:8px}
+.impact-stat span{font-size:11px;line-height:1.35;color:#bfc4ca;text-transform:uppercase;letter-spacing:.07em}
+.case-feature h3{font-size:26px;max-width:460px;margin-top:28px}
+.case-feature p{max-width:480px;color:#c1c5ca;margin-bottom:24px}
 .process-grid{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--line)}
 .process-step{padding:28px 22px 28px 0;border-right:1px solid var(--line)}
 .process-step:not(:first-child){padding-left:22px}
@@ -125,6 +132,8 @@ footer p{font-size:12px;margin:5px 0}
 @media(max-width:980px){
   .links{display:none}
   .hero-grid,.case-wrap,.proc-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+  .case-list{grid-template-columns:1fr 1fr}
+  .case-feature{position:static}
   .hero-image{min-height:430px}
   .snapshot-grid{grid-template-columns:1fr 1fr}
   .service-grid{grid-template-columns:1fr 1fr}
@@ -139,7 +148,7 @@ footer p{font-size:12px;margin:5px 0}
   h1{font-size:52px}
   .hero-copy{padding-top:22px}
   .hero-image{min-height:340px}
-  .snapshot-grid,.service-grid,.gov-grid,.process-grid{grid-template-columns:1fr}
+  .snapshot-grid,.service-grid,.gov-grid,.process-grid,.case-list{grid-template-columns:1fr}
   .snap,.service,.gov-item,.process-step{border-right:0!important;padding-left:0!important;padding-right:0!important}
   .service{padding:26px}
   section{padding:72px 0}
@@ -281,24 +290,51 @@ footer p{font-size:12px;margin:5px 0}
     <div class="section-head">
       <div class="eyebrow">Selected Experience</div>
       <h2>Experience that proves execution.</h2>
+      <p>From large-scale public events and international activations to business programming and digital platforms, TiwaWorks has built experience across complex, multi-stakeholder environments.</p>
     </div>
     <div class="case-wrap">
       <div class="case-list">
-        <article class="case"><small>Large-Scale Event</small><h3>Atlanta Greek Picnic</h3><p>Multi-day production, audience development, vendors, sponsorship, talent, marketing and community engagement.</p></article>
-        <article class="case"><small>International</small><h3>ABE Lagos</h3><p>Long-running international experiential platform demonstrating cross-cultural marketing, production and partnerships.</p></article>
-        <article class="case"><small>Business Programming</small><h3>Detroit Business Symposium</h3><p>Professional convening demonstrating sponsor development, programming, attendee management and production.</p></article>
-        <article class="case"><small>Digital Solutions</small><h3>Revueno & RoadHero</h3><p>Custom digital-platform work demonstrating product strategy and technology-enabled service delivery.</p></article>
+        <article class="case">
+          <small>Large-Scale Event</small>
+          <h3>Atlanta Greek Picnic</h3>
+          <p>Multi-day production, audience development, vendors, sponsorship, talent, marketing and community engagement.</p>
+          <div class="case-tags"><span>20K+ scale</span><span>Atlanta</span><span>Production</span></div>
+        </article>
+        <article class="case">
+          <small>International</small>
+          <h3>ABE Lagos</h3>
+          <p>Long-running international experiential platform demonstrating cross-cultural marketing, production and partnership development.</p>
+          <div class="case-tags"><span>15 years</span><span>International</span><span>Experiential</span></div>
+        </article>
+        <article class="case">
+          <small>Business Programming</small>
+          <h3>Detroit Business Symposium</h3>
+          <p>Professional convening demonstrating sponsor development, programming, attendee management and production.</p>
+          <div class="case-tags"><span>350+ attendees</span><span>Sponsor-funded</span></div>
+        </article>
+        <article class="case">
+          <small>Digital Solutions</small>
+          <h3>Revueno & RoadHero</h3>
+          <p>Custom digital-platform work demonstrating product strategy, user-focused design and technology-enabled service delivery.</p>
+          <div class="case-tags"><span>Custom platforms</span><span>Web</span><span>Digital</span></div>
+        </article>
       </div>
-      <div class="case-feature">
+      <aside class="case-feature">
         <div>
-          <div class="eyebrow">Scale</div>
-          <div class="big-stat">20K+</div>
+          <div class="impact-title">Impact at a glance</div>
+          <div class="impact-grid">
+            <div class="impact-stat"><strong>20K+</strong><span>Large-scale event reach</span></div>
+            <div class="impact-stat"><strong>15 yrs</strong><span>International event experience</span></div>
+            <div class="impact-stat"><strong>350+</strong><span>Business symposium attendees</span></div>
+            <div class="impact-stat"><strong>Multi-sector</strong><span>Events, digital, consulting & engagement</span></div>
+          </div>
         </div>
         <div>
-          <h3>Large-scale coordination is part of the TiwaWorks operating DNA.</h3>
-          <p>From community engagement and sponsor activation to logistics, vendors and on-site delivery, TiwaWorks has years of experience coordinating complex work across multiple stakeholders.</p>
+          <h3>Complex coordination is part of the TiwaWorks operating DNA.</h3>
+          <p>Our experience spans production, vendor coordination, sponsorship, audience engagement, logistics, partnerships and digital delivery across multiple markets.</p>
+          <a class="btn" style="color:#fff;border-color:#474a4f" href="#contact">Discuss Your Opportunity</a>
         </div>
-      </div>
+      </aside>
     </div>
   </div>
 </section>
