@@ -110,6 +110,15 @@ section{padding:96px 0}
 form{background:#fff;padding:34px;display:grid;gap:16px}
 input,select,textarea{width:100%;border:0;border-bottom:1px solid #d8d8d5;padding:12px 0;background:transparent;font:inherit}
 textarea{resize:vertical}
+.collab{background:#fff}
+.collab-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.collab-card{border:1px solid #dfe3e7;background:#fff;overflow:hidden}
+.collab-card img{height:250px;object-fit:cover}
+.collab-body{padding:28px}
+.collab-body h3{font-size:23px;margin-bottom:12px}
+.collab-body p{font-size:15px;color:var(--muted);margin:0}
+.collab-card a{display:block}
+.collab-card:hover{transform:translateY(-2px);transition:.2s ease;box-shadow:0 10px 28px rgba(0,0,0,.06)}
 footer{background:#0b0c0e;color:#979ca4;padding:34px 0}
 footer strong{color:#fff}
 footer p{font-size:12px;margin:5px 0}
@@ -121,6 +130,7 @@ footer p{font-size:12px;margin:5px 0}
   .service-grid{grid-template-columns:1fr 1fr}
   .workforce-grid{grid-template-columns:1fr}
   .work-card{height:330px}
+  .collab-grid{grid-template-columns:1fr}
   .process-grid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:650px){
@@ -318,6 +328,45 @@ footer p{font-size:12px;margin:5px 0}
   </div>
 </section>
 
+<section class="collab">
+  <div class="container">
+    <div class="section-head">
+      <div class="eyebrow">Collaborate With Us</div>
+      <h2>Relationships that support results.</h2>
+      <p>We welcome introductions from agencies, qualified suppliers, subcontractors and professionals.</p>
+    </div>
+    <div class="collab-grid">
+      <article class="collab-card">
+        <a href="#contact">
+          <img src="https://images.pexels.com/photos/37347/office-sitting-room-executive-sitting.jpg?auto=compress&cs=tinysrgb&w=1200" alt="Government and institutional office buildings">
+          <div class="collab-body">
+            <h3>Government & Institutional Buyers</h3>
+            <p>Discuss upcoming requirements, procurement needs and contracting opportunities.</p>
+          </div>
+        </a>
+      </article>
+      <article class="collab-card">
+        <a href="#contact">
+          <img src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Vendors and subcontractors collaborating in an office">
+          <div class="collab-body">
+            <h3>Vendors & Subcontractors</h3>
+            <p>Share service qualifications, coverage areas, available capacity and teaming interest.</p>
+          </div>
+        </a>
+      </article>
+      <article class="collab-card">
+        <a href="#contact">
+          <img src="https://images.pexels.com/photos/3184292/pexels-photo-3184292.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Professionals and specialists networking">
+          <div class="collab-body">
+            <h3>Professionals & Specialists</h3>
+            <p>Connect with TiwaWorks about relevant expertise, project support and potential collaboration.</p>
+          </div>
+        </a>
+      </article>
+    </div>
+  </div>
+</section>
+
 <section id="contact" class="contact">
   <div class="container contact-grid">
     <div>
@@ -347,7 +396,8 @@ footer p{font-size:12px;margin:5px 0}
   <div class="container">
     <strong>TIWAWORKS</strong>
     <p>Government Contracting • Strategic Services • Coordinated Delivery</p>
-    <p>Atlanta, Georgia • UEI HS98G27C5LM1 • CAGE 8WF47</p>
+    <p>6595G Roswell Road, Suite 233 • Atlanta, GA 30341</p>
+    <p>UEI HS98G27C5LM1 • CAGE 8WF47</p>
   </div>
 </footer>
 </body>
