@@ -7,105 +7,124 @@
 <meta name="description" content="TiwaWorks delivers event management, marketing, communications, digital solutions, community engagement and strategic consulting for government, institutions and brands.">
 <style>
 :root{
-  --ink:#101114; --muted:#6d7279; --line:#e8e8e6; --soft:#f8f8f6;
-  --accent:#8f6d32; --max:1120px;
+  --ink:#111214; --muted:#6c7178; --line:#e9e9e7; --soft:#f7f7f5;
+  --accent:#91713a; --max:1140px;
 }
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:white;line-height:1.6}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:#fff;line-height:1.58}
 a{text-decoration:none;color:inherit}
+img{display:block;max-width:100%}
 .container{width:min(var(--max),calc(100% - 48px));margin:auto}
-header{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.97);border-bottom:1px solid var(--line)}
-.nav{height:68px;display:flex;align-items:center;gap:28px}
+header{position:sticky;top:0;z-index:30;background:rgba(255,255,255,.97);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:70px;display:flex;align-items:center;gap:28px}
 .brand{font-weight:900;letter-spacing:.045em;font-size:15px}
 .brand b{display:inline-grid;place-items:center;width:34px;height:34px;margin-right:10px;background:#111;color:#fff;font-size:11px}
 .links{display:flex;gap:24px;margin-left:auto;font-size:12px;font-weight:700}
 .nav-cta{border:1px solid #d8d8d5;padding:10px 14px;font-size:12px;font-weight:700}
-.hero{padding:100px 0 74px}
 .eyebrow{font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--accent);font-weight:800;margin-bottom:16px}
 h1,h2,h3{margin-top:0;line-height:1.05}
-h1{font-size:clamp(52px,7vw,84px);letter-spacing:-.055em;max-width:900px;margin-bottom:26px}
-h2{font-size:clamp(34px,4vw,48px);letter-spacing:-.035em;max-width:780px;margin-bottom:18px}
-h3{font-size:19px;letter-spacing:-.015em}
-.lead{font-size:18px;color:var(--muted);max-width:760px}
-.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:30px}
-.btn{display:inline-block;padding:13px 18px;font-size:12px;font-weight:800;border:1px solid #d8d8d5}
-.btn-dark{background:#111;color:white;border-color:#111}
-.snapshot{margin-top:54px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+h1{font-size:clamp(52px,6.7vw,84px);letter-spacing:-.055em;margin-bottom:24px}
+h2{font-size:clamp(34px,4vw,48px);letter-spacing:-.04em;margin-bottom:18px}
+h3{font-size:20px;letter-spacing:-.02em}
+p{margin-top:0}
+.lead{font-size:18px;color:var(--muted);max-width:700px}
+.btn{display:inline-block;padding:13px 18px;font-size:12px;font-weight:800;border:1px solid #d7d7d4}
+.btn-dark{background:#111;color:#fff;border-color:#111}
+.hero{padding:86px 0 68px}
+.hero-grid{display:grid;grid-template-columns:1.12fr .88fr;gap:64px;align-items:end}
+.hero-copy{padding-bottom:8px}
+.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:28px}
+.hero-media{height:470px;overflow:hidden;background:#ececec}
+.hero-media img{width:100%;height:100%;object-fit:cover;filter:grayscale(100%);transform:scale(1.01)}
+.snapshot{margin-top:48px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .snapshot-grid{display:grid;grid-template-columns:repeat(5,1fr)}
-.snap{padding:18px 18px 18px 0;border-right:1px solid var(--line)}
+.snap{padding:17px 16px 17px 0;border-right:1px solid var(--line)}
+.snap:not(:first-child){padding-left:16px}
 .snap:last-child{border-right:0}
-.snap span{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:#85898f}
+.snap span{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:#898d93}
 .snap strong{display:block;margin-top:4px;font-size:13px}
 .metrics{border-bottom:1px solid var(--line)}
 .metrics-grid{display:grid;grid-template-columns:repeat(4,1fr)}
-.metric{padding:22px 0;border-right:1px solid var(--line)}
+.metric{padding:20px 0;border-right:1px solid var(--line)}
 .metric:not(:first-child){padding-left:24px}
 .metric:last-child{border-right:0}
-.metric strong{display:block;font-size:24px}
-.metric span{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:#85898f;margin-top:4px}
-section{padding:90px 0}
+.metric strong{display:block;font-size:23px}
+.metric span{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.1em;color:#898d93;margin-top:4px}
+section{padding:86px 0}
 .soft{background:var(--soft)}
-.section-head{max-width:760px;margin-bottom:42px}
+.section-head{max-width:760px;margin-bottom:40px}
 .section-head p{color:var(--muted);font-size:16px}
-.rule-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line)}
+.two-grid{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line)}
 .item{padding:26px 0;border-bottom:1px solid var(--line)}
-.item:nth-child(odd){padding-right:34px;border-right:1px solid var(--line)}
-.item:nth-child(even){padding-left:34px}
+.item:nth-child(odd){padding-right:36px;border-right:1px solid var(--line)}
+.item:nth-child(even){padding-left:36px}
 .item .num{font-size:10px;color:var(--accent);font-weight:800;margin-bottom:12px}
 .item p{color:var(--muted);font-size:14px;max-width:92%;margin-bottom:0}
+.feature-strip{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:36px}
+.feature-photo{position:relative;height:260px;overflow:hidden;background:#ddd}
+.feature-photo img{width:100%;height:100%;object-fit:cover;filter:grayscale(100%)}
+.feature-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6),rgba(0,0,0,.03) 70%)}
+.feature-label{position:absolute;z-index:2;left:18px;right:18px;bottom:16px;color:#fff}
+.feature-label small{display:block;font-size:9px;text-transform:uppercase;letter-spacing:.12em;color:#ddd}
+.feature-label strong{display:block;font-size:18px;margin-top:4px}
 .experience{display:grid;grid-template-columns:repeat(2,1fr);border-top:1px solid var(--line)}
-.exp{padding:30px 0;border-bottom:1px solid var(--line)}
-.exp:nth-child(odd){padding-right:34px;border-right:1px solid var(--line)}
-.exp:nth-child(even){padding-left:34px}
+.exp{padding:28px 0;border-bottom:1px solid var(--line)}
+.exp:nth-child(odd){padding-right:36px;border-right:1px solid var(--line)}
+.exp:nth-child(even){padding-left:36px}
 .exp small{font-size:10px;text-transform:uppercase;letter-spacing:.11em;color:var(--accent);font-weight:800}
-.exp h3{font-size:24px;margin:10px 0}
+.exp h3{font-size:23px;margin:10px 0}
 .exp p{color:var(--muted);font-size:14px}
-.tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:18px}
-.tags span{font-size:10px;color:#666}
+.tags{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+.tags span{font-size:10px;color:#6f7378}
 .process{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
 .step{padding:26px 0;border-bottom:1px solid var(--line)}
-.step:not(:last-child){border-right:1px solid var(--line);padding-right:26px}
-.step:not(:first-child){padding-left:26px}
+.step:not(:last-child){border-right:1px solid var(--line);padding-right:28px}
+.step:not(:first-child){padding-left:28px}
 .step b{font-size:10px;color:var(--accent)}
 .step p{font-size:14px;color:var(--muted)}
-.dark{background:#111;color:white}
-.dark .section-head p{color:#a8adb4}
+.dark{background:#121315;color:white}
+.dark .section-head p{color:#aeb2b8}
 .proc-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px;align-items:start}
-.naics{border-top:1px solid #2a2d31}
-.naics div{display:grid;grid-template-columns:92px 1fr;gap:20px;padding:12px 0;border-bottom:1px solid #2a2d31}
+.naics{border-top:1px solid #2e3034}
+.naics div{display:grid;grid-template-columns:92px 1fr;gap:20px;padding:12px 0;border-bottom:1px solid #2e3034}
 .naics strong{font-size:13px}
-.naics span{color:#c7cbd0;font-size:13px}
+.naics span{font-size:13px;color:#c9cdd2}
 .about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:72px}
 .statement{font-size:22px;line-height:1.45;font-weight:700}
 .about-list{border-left:1px solid #cfcfcb;padding-left:22px}
 .about-list p{font-size:14px;color:var(--muted);margin:0 0 14px}
 .press{display:grid;grid-template-columns:repeat(3,1fr);border-top:1px solid var(--line)}
-.press a{padding:26px 0;border-bottom:1px solid var(--line)}
-.press a:not(:last-child){border-right:1px solid var(--line);padding-right:26px}
-.press a:not(:first-child){padding-left:26px}
+.press a{padding:24px 0;border-bottom:1px solid var(--line)}
+.press a:not(:last-child){border-right:1px solid var(--line);padding-right:28px}
+.press a:not(:first-child){padding-left:28px}
 .pub{font-size:10px;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:800}
 .press p{font-size:13px;color:var(--muted)}
 .contact{background:#f6f5f1}
 .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:72px}
 form{display:grid;gap:16px}
-input,select,textarea{width:100%;border:0;border-bottom:1px solid #d8d8d5;background:transparent;padding:12px 0;font:inherit}
+input,select,textarea{width:100%;border:0;border-bottom:1px solid #d7d7d4;background:transparent;padding:12px 0;font:inherit}
 textarea{resize:vertical}
 footer{background:#111;color:#9ea3aa;padding:30px 0}
 footer strong{color:white}
 footer p{margin:5px 0;font-size:12px}
-@media(max-width:900px){
+@media(max-width:920px){
   .links{display:none}
+  .hero-grid,.proc-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+  .hero-media{height:360px}
   .snapshot-grid,.metrics-grid{grid-template-columns:1fr 1fr}
-  .rule-grid,.experience,.process,.proc-grid,.about-grid,.press,.contact-grid{grid-template-columns:1fr}
+  .two-grid,.experience,.process,.press{grid-template-columns:1fr}
   .item,.exp,.step,.press a{padding-left:0!important;padding-right:0!important;border-right:0!important}
+  .feature-strip{grid-template-columns:1fr}
 }
 @media(max-width:600px){
   .container{width:min(var(--max),calc(100% - 28px))}
-  h1{font-size:48px}
+  h1{font-size:47px}
+  .hero{padding-top:68px}
+  .hero-media{height:300px}
   .snapshot-grid,.metrics-grid{grid-template-columns:1fr}
   .snap,.metric{border-right:0;border-bottom:1px solid var(--line);padding-left:0!important}
-  section{padding:70px 0}
+  section{padding:68px 0}
 }
 </style>
 </head>
@@ -128,14 +147,20 @@ footer p{margin:5px 0;font-size:12px}
 <main id="top">
 <section class="hero">
   <div class="container">
-    <div class="eyebrow">Government Contracting • Strategic Services</div>
-    <h1>Strategy. Production. Engagement. Execution.</h1>
-    <p class="lead">TiwaWorks is an Atlanta-based integrated services firm supporting government agencies, institutions and organizations with event management, marketing, communications, digital solutions, community engagement and strategic consulting.</p>
-    <div class="actions">
-      <a class="btn btn-dark" href="#government">Explore Government Capabilities</a>
-      <a class="btn" href="#contact">Team With TiwaWorks</a>
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow">Government Contracting • Strategic Services</div>
+        <h1>Built to plan. Built to execute.</h1>
+        <p class="lead">TiwaWorks is an Atlanta-based integrated services firm supporting government agencies, institutions and organizations through event management, marketing, communications, digital solutions, community engagement and strategic consulting.</p>
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="#government">Explore Capabilities</a>
+          <a class="btn" href="#contact">Team With TiwaWorks</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="https://tiwaworks.com/wp-content/uploads/2026/08/d04b2c1e-78de-4e9e-80fc-ed93f94e49b2-1024x576.png" alt="TiwaWorks event production">
+      </div>
     </div>
-
     <div class="snapshot">
       <div class="snapshot-grid">
         <div class="snap"><span>UEI</span><strong>HS98G27C5LM1</strong></div>
@@ -151,8 +176,8 @@ footer p{margin:5px 0;font-size:12px}
 <section class="metrics">
   <div class="container metrics-grid">
     <div class="metric"><strong>20+ Years</strong><span>Operating Experience</span></div>
-    <div class="metric"><strong>20,000+</strong><span>Large-Scale Event Reach</span></div>
-    <div class="metric"><strong>15 Years</strong><span>ABE Lagos Experience</span></div>
+    <div class="metric"><strong>20,000+</strong><span>Event Scale</span></div>
+    <div class="metric"><strong>15 Years</strong><span>ABE Lagos</span></div>
     <div class="metric"><strong>3 Continents</strong><span>International Experience</span></div>
   </div>
 </section>
@@ -161,14 +186,14 @@ footer p{margin:5px 0;font-size:12px}
   <div class="container">
     <div class="section-head">
       <div class="eyebrow">Government Contracting</div>
-      <h2>A responsive small-business partner built to execute.</h2>
-      <p>TiwaWorks combines planning, communications, stakeholder engagement, creative services and on-the-ground delivery—giving agencies and prime contractors one accountable partner across multiple workstreams.</p>
+      <h2>A small-business partner built for complex delivery.</h2>
+      <p>TiwaWorks brings strategy, coordination, communications and real-world execution together under one accountable team.</p>
     </div>
-    <div class="rule-grid">
-      <article class="item"><div class="num">01</div><h3>Program & Project Support</h3><p>Workplans, schedules, stakeholder coordination, vendor management, deliverables and reporting support.</p></article>
-      <article class="item"><div class="num">02</div><h3>Public-Facing Events</h3><p>Conferences, ceremonies, community events, festivals, meetings and experiential activations.</p></article>
-      <article class="item"><div class="num">03</div><h3>Community & Stakeholder Engagement</h3><p>Multicultural outreach, HBCU engagement, grassroots activation, public engagement and partnership development.</p></article>
-      <article class="item"><div class="num">04</div><h3>Integrated Communications</h3><p>Marketing, PR, social media, content, influencer programs, video and digital campaign delivery.</p></article>
+    <div class="two-grid">
+      <article class="item"><div class="num">01</div><h3>Program & Project Support</h3><p>Workplans, schedules, stakeholder coordination, vendors, deliverables and reporting.</p></article>
+      <article class="item"><div class="num">02</div><h3>Public-Facing Events</h3><p>Conferences, ceremonies, community events, festivals, meetings and activations.</p></article>
+      <article class="item"><div class="num">03</div><h3>Community & Stakeholder Engagement</h3><p>Multicultural outreach, HBCU engagement, grassroots activation and public engagement.</p></article>
+      <article class="item"><div class="num">04</div><h3>Integrated Communications</h3><p>Marketing, PR, social, content, influencer programs, video and digital campaigns.</p></article>
     </div>
   </div>
 </section>
@@ -177,14 +202,14 @@ footer p{margin:5px 0;font-size:12px}
   <div class="container">
     <div class="section-head">
       <div class="eyebrow">Core Capabilities</div>
-      <h2>Integrated services, clearly organized.</h2>
-      <p>Our strongest value is coordination: strategy, communications, production and engagement working together instead of as disconnected vendors.</p>
+      <h2>Integrated services. One point of accountability.</h2>
+      <p>Our strongest value is coordination—strategy, communications, production and engagement working together instead of as disconnected vendors.</p>
     </div>
-    <div class="rule-grid">
-      <article class="item"><div class="num">01</div><h3>Event Management & Production</h3><p>Planning, logistics, venue and vendor coordination, staffing, registration, run-of-show and on-site execution.</p></article>
+    <div class="two-grid">
+      <article class="item"><div class="num">01</div><h3>Event Management & Production</h3><p>Planning, logistics, vendors, staffing, registration, run-of-show and on-site execution.</p></article>
       <article class="item"><div class="num">02</div><h3>Marketing & Communications</h3><p>Campaign strategy, PR, advertising, audience development, messaging and media relations.</p></article>
-      <article class="item"><div class="num">03</div><h3>Digital, Social & Content</h3><p>Social strategy, influencer programs, video, photography, content development, email and web support.</p></article>
-      <article class="item"><div class="num">04</div><h3>Strategic Consulting & Business Development</h3><p>Partnerships, sponsorship strategy, market expansion, project management and strategic planning.</p></article>
+      <article class="item"><div class="num">03</div><h3>Digital, Social & Content</h3><p>Social strategy, influencer programs, video, photography, email, content and web support.</p></article>
+      <article class="item"><div class="num">04</div><h3>Strategic Consulting & Business Development</h3><p>Partnerships, sponsorships, market expansion, project management and strategic planning.</p></article>
     </div>
   </div>
 </section>
@@ -194,9 +219,25 @@ footer p{margin:5px 0;font-size:12px}
     <div class="section-head">
       <div class="eyebrow">Selected Experience</div>
       <h2>Proof of execution.</h2>
-      <p>Selected TiwaWorks-led initiatives demonstrate scale, range and relevance to public-sector work.</p>
+      <p>Selected TiwaWorks-led initiatives demonstrate scale, range and direct relevance to public-sector work.</p>
     </div>
-    <div class="experience">
+
+    <div class="feature-strip">
+      <div class="feature-photo">
+        <img src="https://tiwaworks.com/wp-content/uploads/2026/08/d04b2c1e-78de-4e9e-80fc-ed93f94e49b2-1024x576.png" alt="Atlanta Greek Picnic">
+        <div class="feature-label"><small>Large-Scale Event</small><strong>Atlanta Greek Picnic</strong></div>
+      </div>
+      <div class="feature-photo">
+        <img src="https://tiwaworks.com/wp-content/uploads/2026/08/0a07c2d6-c10f-4d3f-852f-10f16443b553-1024x683.png" alt="ABE Lagos">
+        <div class="feature-label"><small>International</small><strong>ABE Lagos</strong></div>
+      </div>
+      <div class="feature-photo">
+        <img src="https://tiwaworks.com/wp-content/uploads/2026/08/42feeacc-6d96-425c-9661-85e61f302bd6-1024x768.png" alt="Detroit Business Symposium">
+        <div class="feature-label"><small>Business Programming</small><strong>Detroit Symposium</strong></div>
+      </div>
+    </div>
+
+    <div class="experience" style="margin-top:28px">
       <article class="exp"><small>Large-Scale Event</small><h3>Atlanta Greek Picnic</h3><p>Multi-day event production combining audience development, vendors, sponsorship, talent, marketing and community engagement.</p><div class="tags"><span>20,000+ scale</span><span>Atlanta</span><span>Production</span><span>Marketing</span></div></article>
       <article class="exp"><small>International</small><h3>ABE Lagos / All Black Everything</h3><p>Long-running international experiential platform demonstrating cross-cultural marketing, entertainment production and partnership development.</p><div class="tags"><span>15 years</span><span>3,000+ annual guests</span><span>International</span></div></article>
       <article class="exp"><small>Business Programming</small><h3>Detroit Business Symposium</h3><p>Business-focused convening demonstrating sponsor development, attendee management, programming, marketing and production.</p><div class="tags"><span>350+ attendees</span><span>Sponsor-funded</span><span>Professional audience</span></div></article>
@@ -224,7 +265,7 @@ footer p{margin:5px 0;font-size:12px}
   <div class="container proc-grid">
     <div class="section-head">
       <div class="eyebrow">Procurement Snapshot</div>
-      <h2>Designed to make vendor review easy.</h2>
+      <h2>Easy to evaluate. Ready to engage.</h2>
       <p>TiwaWorks keeps its website, capability statement and contracting identifiers aligned so buyers can quickly understand the company, scope fit and relevant experience.</p>
       <a class="btn" style="color:white;border-color:#3a3d42" href="#contact">Request Capability Statement</a>
     </div>
